@@ -24,7 +24,7 @@
   height: 5.6rem;
   background: #fff;
   border-radius: 50%;
-  filter: blur(4px);
+  filter: blur(15px);
 }
 
 .start-1 {
@@ -33,20 +33,20 @@
   left: 1.25rem;
   width: 3.12rem;
   height: 3.12rem;
-  transform: rotate(16deg);
+  transform: rotate(106deg);
 }
 .start-1::after {
   content: "";
   display: block;
   position: absolute;
-  width: 4rem;
-  height: 4rem;
+  width: 3.12rem;
+  height: 3.12rem;
   background: #fff;
   border-radius: 50%;
-  transform-origin: 39px 39px;
-  -webkit-animation: animate 2.2s ease-in-out infinite both;
-          animation: animate 2.2s ease-in-out infinite both;
-  filter: blur(0.4px);
+  transform-origin: 34px 34px;
+  -webkit-animation: animate 2.7s ease-in-out 0.2s infinite both;
+          animation: animate 2.7s ease-in-out 0.2s infinite both;
+  filter: blur(5px);
 }
 
 .start-2 {
@@ -55,20 +55,20 @@
   left: 1.25rem;
   width: 3.12rem;
   height: 3.12rem;
-  transform: rotate(112deg);
+  transform: rotate(297deg);
 }
 .start-2::after {
   content: "";
   display: block;
   position: absolute;
-  width: 4rem;
-  height: 4rem;
+  width: 3.12rem;
+  height: 3.12rem;
   background: #fff;
   border-radius: 50%;
-  transform-origin: 36px 36px;
-  -webkit-animation: animate 2.4s ease-in-out infinite both;
-          animation: animate 2.4s ease-in-out infinite both;
-  filter: blur(0.4px);
+  transform-origin: 31px 31px;
+  -webkit-animation: animate 2.9s ease-in-out 0.4s infinite both;
+          animation: animate 2.9s ease-in-out 0.4s infinite both;
+  filter: blur(5px);
 }
 
 .start-3 {
@@ -77,20 +77,20 @@
   left: 1.25rem;
   width: 3.12rem;
   height: 3.12rem;
-  transform: rotate(56deg);
+  transform: rotate(175deg);
 }
 .start-3::after {
   content: "";
   display: block;
   position: absolute;
-  width: 4rem;
-  height: 4rem;
+  width: 3.12rem;
+  height: 3.12rem;
   background: #fff;
   border-radius: 50%;
-  transform-origin: 33px 33px;
-  -webkit-animation: animate 2.6s ease-in-out infinite both;
-          animation: animate 2.6s ease-in-out infinite both;
-  filter: blur(0.4px);
+  transform-origin: 28px 28px;
+  -webkit-animation: animate 3.1s ease-in-out 0.6s infinite both;
+          animation: animate 3.1s ease-in-out 0.6s infinite both;
+  filter: blur(5px);
 }
 
 .start-4 {
@@ -99,20 +99,20 @@
   left: 1.25rem;
   width: 3.12rem;
   height: 3.12rem;
-  transform: rotate(112deg);
+  transform: rotate(168deg);
 }
 .start-4::after {
   content: "";
   display: block;
   position: absolute;
-  width: 4rem;
-  height: 4rem;
+  width: 3.12rem;
+  height: 3.12rem;
   background: #fff;
   border-radius: 50%;
-  transform-origin: 30px 30px;
-  -webkit-animation: animate 2.8s ease-in-out infinite both;
-          animation: animate 2.8s ease-in-out infinite both;
-  filter: blur(0.4px);
+  transform-origin: 25px 25px;
+  -webkit-animation: animate 3.3s ease-in-out 0.8s infinite both;
+          animation: animate 3.3s ease-in-out 0.8s infinite both;
+  filter: blur(5px);
 }
 
 .start-5 {
@@ -121,20 +121,20 @@
   left: 1.25rem;
   width: 3.12rem;
   height: 3.12rem;
-  transform: rotate(3deg);
+  transform: rotate(241deg);
 }
 .start-5::after {
   content: "";
   display: block;
   position: absolute;
-  width: 4rem;
-  height: 4rem;
+  width: 3.12rem;
+  height: 3.12rem;
   background: #fff;
   border-radius: 50%;
-  transform-origin: 27px 27px;
-  -webkit-animation: animate 3s ease-in-out infinite both;
-          animation: animate 3s ease-in-out infinite both;
-  filter: blur(0.4px);
+  transform-origin: 22px 22px;
+  -webkit-animation: animate 3.5s ease-in-out 1s infinite both;
+          animation: animate 3.5s ease-in-out 1s infinite both;
+  filter: blur(5px);
 }
 
 .start-6 {
@@ -143,20 +143,20 @@
   left: 1.25rem;
   width: 3.12rem;
   height: 3.12rem;
-  transform: rotate(229deg);
+  transform: rotate(145deg);
 }
 .start-6::after {
   content: "";
   display: block;
   position: absolute;
-  width: 4rem;
-  height: 4rem;
+  width: 3.12rem;
+  height: 3.12rem;
   background: #fff;
   border-radius: 50%;
-  transform-origin: 24px 24px;
-  -webkit-animation: animate 3.2s ease-in-out infinite both;
-          animation: animate 3.2s ease-in-out infinite both;
-  filter: blur(0.4px);
+  transform-origin: 19px 19px;
+  -webkit-animation: animate 3.7s ease-in-out 1.2s infinite both;
+          animation: animate 3.7s ease-in-out 1.2s infinite both;
+  filter: blur(5px);
 }
 
 .start-7 {
@@ -165,20 +165,20 @@
   left: 1.25rem;
   width: 3.12rem;
   height: 3.12rem;
-  transform: rotate(77deg);
+  transform: rotate(92deg);
 }
 .start-7::after {
   content: "";
   display: block;
   position: absolute;
-  width: 4rem;
-  height: 4rem;
+  width: 3.12rem;
+  height: 3.12rem;
   background: #fff;
   border-radius: 50%;
-  transform-origin: 21px 21px;
-  -webkit-animation: animate 3.4s ease-in-out infinite both;
-          animation: animate 3.4s ease-in-out infinite both;
-  filter: blur(0.4px);
+  transform-origin: 16px 16px;
+  -webkit-animation: animate 3.9s ease-in-out 1.4s infinite both;
+          animation: animate 3.9s ease-in-out 1.4s infinite both;
+  filter: blur(5px);
 }
 
 .start-8 {
@@ -187,20 +187,20 @@
   left: 1.25rem;
   width: 3.12rem;
   height: 3.12rem;
-  transform: rotate(279deg);
+  transform: rotate(81deg);
 }
 .start-8::after {
   content: "";
   display: block;
   position: absolute;
-  width: 4rem;
-  height: 4rem;
+  width: 3.12rem;
+  height: 3.12rem;
   background: #fff;
   border-radius: 50%;
-  transform-origin: 18px 18px;
-  -webkit-animation: animate 3.6s ease-in-out infinite both;
-          animation: animate 3.6s ease-in-out infinite both;
-  filter: blur(0.4px);
+  transform-origin: 13px 13px;
+  -webkit-animation: animate 4.1s ease-in-out 1.6s infinite both;
+          animation: animate 4.1s ease-in-out 1.6s infinite both;
+  filter: blur(5px);
 }
 
 .end-1 {
@@ -209,7 +209,7 @@
   left: 2.35rem;
   width: 7px;
   height: 7px;
-  transform: rotate(120deg);
+  transform: rotate(160deg);
 }
 .end-1::after {
   content: "";
@@ -222,7 +222,7 @@
   transform-origin: 58px 58px;
   -webkit-animation: animate 3.7s ease-in-out 0.2s infinite both;
           animation: animate 3.7s ease-in-out 0.2s infinite both;
-  filter: blur(0.1px);
+  filter: blur(3px);
 }
 
 .end-2 {
@@ -231,7 +231,7 @@
   left: 2.35rem;
   width: 8px;
   height: 8px;
-  transform: rotate(16deg);
+  transform: rotate(203deg);
 }
 .end-2::after {
   content: "";
@@ -244,7 +244,7 @@
   transform-origin: 56px 56px;
   -webkit-animation: animate 3.9s ease-in-out 0.4s infinite both;
           animation: animate 3.9s ease-in-out 0.4s infinite both;
-  filter: blur(0.1px);
+  filter: blur(3px);
 }
 
 .end-3 {
@@ -253,7 +253,7 @@
   left: 2.35rem;
   width: 9px;
   height: 9px;
-  transform: rotate(109deg);
+  transform: rotate(199deg);
 }
 .end-3::after {
   content: "";
@@ -266,7 +266,7 @@
   transform-origin: 54px 54px;
   -webkit-animation: animate 4.1s ease-in-out 0.6s infinite both;
           animation: animate 4.1s ease-in-out 0.6s infinite both;
-  filter: blur(0.1px);
+  filter: blur(3px);
 }
 
 .end-4 {
@@ -275,7 +275,7 @@
   left: 2.35rem;
   width: 10px;
   height: 10px;
-  transform: rotate(202deg);
+  transform: rotate(206deg);
 }
 .end-4::after {
   content: "";
@@ -288,7 +288,7 @@
   transform-origin: 52px 52px;
   -webkit-animation: animate 4.3s ease-in-out 0.8s infinite both;
           animation: animate 4.3s ease-in-out 0.8s infinite both;
-  filter: blur(0.1px);
+  filter: blur(3px);
 }
 
 .end-5 {
@@ -297,7 +297,7 @@
   left: 2.35rem;
   width: 11px;
   height: 11px;
-  transform: rotate(40deg);
+  transform: rotate(98deg);
 }
 .end-5::after {
   content: "";
@@ -310,7 +310,7 @@
   transform-origin: 50px 50px;
   -webkit-animation: animate 4.5s ease-in-out 1s infinite both;
           animation: animate 4.5s ease-in-out 1s infinite both;
-  filter: blur(0.1px);
+  filter: blur(3px);
 }
 
 .end-6 {
@@ -319,7 +319,7 @@
   left: 2.35rem;
   width: 12px;
   height: 12px;
-  transform: rotate(142deg);
+  transform: rotate(22deg);
 }
 .end-6::after {
   content: "";
@@ -332,7 +332,7 @@
   transform-origin: 48px 48px;
   -webkit-animation: animate 4.7s ease-in-out 1.2s infinite both;
           animation: animate 4.7s ease-in-out 1.2s infinite both;
-  filter: blur(0.1px);
+  filter: blur(3px);
 }
 
 .end-7 {
@@ -341,7 +341,7 @@
   left: 2.35rem;
   width: 13px;
   height: 13px;
-  transform: rotate(201deg);
+  transform: rotate(156deg);
 }
 .end-7::after {
   content: "";
@@ -354,7 +354,7 @@
   transform-origin: 46px 46px;
   -webkit-animation: animate 4.9s ease-in-out 1.4s infinite both;
           animation: animate 4.9s ease-in-out 1.4s infinite both;
-  filter: blur(0.1px);
+  filter: blur(3px);
 }
 
 .end-8 {
@@ -363,7 +363,7 @@
   left: 2.35rem;
   width: 14px;
   height: 14px;
-  transform: rotate(71deg);
+  transform: rotate(135deg);
 }
 .end-8::after {
   content: "";
@@ -376,7 +376,7 @@
   transform-origin: 44px 44px;
   -webkit-animation: animate 5.1s ease-in-out 1.6s infinite both;
           animation: animate 5.1s ease-in-out 1.6s infinite both;
-  filter: blur(0.1px);
+  filter: blur(3px);
 }
 
 .end-9 {
@@ -385,7 +385,7 @@
   left: 2.35rem;
   width: 15px;
   height: 15px;
-  transform: rotate(167deg);
+  transform: rotate(287deg);
 }
 .end-9::after {
   content: "";
@@ -398,7 +398,7 @@
   transform-origin: 42px 42px;
   -webkit-animation: animate 5.3s ease-in-out 1.8s infinite both;
           animation: animate 5.3s ease-in-out 1.8s infinite both;
-  filter: blur(0.1px);
+  filter: blur(3px);
 }
 
 .end-10 {
@@ -407,7 +407,7 @@
   left: 2.35rem;
   width: 16px;
   height: 16px;
-  transform: rotate(243deg);
+  transform: rotate(7deg);
 }
 .end-10::after {
   content: "";
@@ -420,7 +420,7 @@
   transform-origin: 40px 40px;
   -webkit-animation: animate 5.5s ease-in-out 2s infinite both;
           animation: animate 5.5s ease-in-out 2s infinite both;
-  filter: blur(0.1px);
+  filter: blur(3px);
 }
 
 @-webkit-keyframes animate {

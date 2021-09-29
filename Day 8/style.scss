@@ -26,7 +26,7 @@
   height: 5.6rem;
   background: #fff;
   border-radius: 50%;
-  filter: blur(4px);
+  filter: blur(15px);
 }
 
 @for $i from 1 through 8 {
@@ -43,15 +43,22 @@
       content: "";
       display: block;
       position: absolute;
-      width: 4rem;
-      height: 4rem;
+      width: 3.12rem;
+      height: 3.12rem;
 
       background: #fff;
       border-radius: 50%;
 
-      transform-origin: (42 - $i * 3) + px (42 - $i * 3) + px;
-      animation: animate (2 + $i / 5) + s ease-in-out infinite both;
-      filter: blur(0.4px);
+      transform-origin: (37 - $i * 3) + px (37 - $i * 3) + px;
+      animation: animate
+        (2.5 + $i / 5) +
+        s
+        ease-in-out
+        ($i / 5) +
+        s
+        infinite
+        both;
+      filter: blur(5px);
     }
   }
 }
@@ -84,7 +91,7 @@
         s
         infinite
         both;
-      filter: blur(0.1px);
+      filter: blur(3px);
     }
   }
 }
