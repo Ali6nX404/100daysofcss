@@ -1,0 +1,661 @@
+@import url(https://fonts.googleapis.com/css?family=Open+Sans:300,400);
+*,
+*::after,
+*::before {
+  margin: 0;
+}
+
+html {
+  font-size: 62.5%;
+}
+
+.frame {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  width: 40rem;
+  height: 40rem;
+  transform: translate(-50%, -50%);
+  border-radius: 2px;
+  box-shadow: 0.1rem 0.2rem 1rem rgba(0, 0, 0, 0.3);
+  background: #1a2238;
+  overflow: hidden;
+  font-family: "Open Sans", Helvetica, sans-serif;
+}
+
+.moon {
+  position: absolute;
+  width: 6.7rem;
+  height: 6.7rem;
+  top: 4.5rem;
+  left: 4.5rem;
+  border-radius: 50%;
+  background: #f6edbd;
+  overflow: hidden;
+  box-shadow: 0 0 1rem #f6edbd;
+  -webkit-animation: rise 1s ease-out;
+          animation: rise 1s ease-out;
+}
+.moon .dark-circle-1, .moon .dark-circle-9, .moon .dark-circle-10, .moon .dark-circle-4, .moon .dark-circle-8, .moon .dark-circle-7, .moon .dark-circle-6, .moon .dark-circle-5, .moon .dark-circle-3, .moon .dark-circle-2 {
+  position: absolute;
+  width: 1rem;
+  height: 1rem;
+  top: 0.9rem;
+  left: 2.8rem;
+  border-radius: 50%;
+  background: #e0d6a0;
+}
+.moon .dark-circle-2 {
+  top: 1.5rem;
+  left: 0rem;
+}
+.moon .dark-circle-3 {
+  top: 5.7rem;
+  left: 1.6rem;
+}
+.moon .dark-circle-4, .moon .dark-circle-8, .moon .dark-circle-7, .moon .dark-circle-6, .moon .dark-circle-5 {
+  width: 0.7rem;
+  height: 0.7rem;
+  top: 1.7rem;
+  left: 4.5rem;
+}
+.moon .dark-circle-5 {
+  top: 2.6rem;
+  left: 6rem;
+}
+.moon .dark-circle-6 {
+  top: 3.7rem;
+  left: 1.7rem;
+}
+.moon .dark-circle-7 {
+  top: 3.7rem;
+}
+.moon .dark-circle-8 {
+  top: 5rem;
+  left: 3.5rem;
+}
+.moon .dark-circle-9, .moon .dark-circle-10 {
+  width: 0.4rem;
+  height: 0.4rem;
+  top: 2.5rem;
+  left: 1.6rem;
+}
+.moon .dark-circle-10 {
+  top: 3rem;
+  left: 3.4rem;
+}
+
+.hill-1, .hill-sec-1, .hill-sec-3, .hill-sec-2, .hill-2 {
+  position: absolute;
+  z-index: 2;
+  width: 33rem;
+  height: 28rem;
+  top: 20rem;
+  left: -5.7rem;
+  background: #26314f;
+  border-radius: 50%;
+}
+
+.hill-2 {
+  left: 150px;
+}
+
+.hill-sec-1, .hill-sec-3, .hill-sec-2 {
+  background: #303c5d;
+  top: 25rem;
+  left: -15rem;
+}
+
+.hill-sec-2 {
+  left: 5rem;
+  top: 24rem;
+}
+
+.hill-sec-3 {
+  left: 24rem;
+}
+
+.temp-info {
+  background-color: #fff;
+  z-index: 2;
+  position: absolute;
+  bottom: 0;
+  width: 100%;
+  height: 9rem;
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+}
+.temp-info .temp {
+  font-size: 5rem;
+  font-weight: 200;
+  letter-spacing: 0.4rem;
+  margin-left: -0.5rem;
+}
+.temp-info p {
+  margin-left: -5rem;
+  font-size: 1.5rem;
+  color: #000000b3;
+}
+
+td {
+  font-size: 1.3rem;
+  font-weight: 200;
+  color: #000000b3;
+}
+
+.big-drop-1 {
+  position: absolute;
+  z-index: 15;
+  left: 3.8rem;
+  bottom: 9rem;
+  width: 1.1rem;
+  height: 1.1rem;
+  -webkit-clip-path: polygon(50% 0%, 68% 20%, 77% 40%, 79% 67%, 67% 89%, 41% 100%, 20% 88%, 15% 67%, 16% 40%, 28% 19%);
+          clip-path: polygon(50% 0%, 68% 20%, 77% 40%, 79% 67%, 67% 89%, 41% 100%, 20% 88%, 15% 67%, 16% 40%, 28% 19%);
+  background: #7fc1f9;
+  -webkit-animation: drop 0.7s linear 0.56s infinite;
+          animation: drop 0.7s linear 0.56s infinite;
+  -webkit-animation-fill-mode: both;
+          animation-fill-mode: both;
+  transform-origin: 50% 100%;
+}
+
+.big-drop-2 {
+  position: absolute;
+  z-index: 15;
+  left: 7.6rem;
+  bottom: 9rem;
+  width: 1.1rem;
+  height: 1.1rem;
+  -webkit-clip-path: polygon(50% 0%, 68% 20%, 77% 40%, 79% 67%, 67% 89%, 41% 100%, 20% 88%, 15% 67%, 16% 40%, 28% 19%);
+          clip-path: polygon(50% 0%, 68% 20%, 77% 40%, 79% 67%, 67% 89%, 41% 100%, 20% 88%, 15% 67%, 16% 40%, 28% 19%);
+  background: #7fc1f9;
+  -webkit-animation: drop 0.6s linear 1.64s infinite;
+          animation: drop 0.6s linear 1.64s infinite;
+  -webkit-animation-fill-mode: both;
+          animation-fill-mode: both;
+  transform-origin: 50% 100%;
+}
+
+.big-drop-3 {
+  position: absolute;
+  z-index: 15;
+  left: 11.4rem;
+  bottom: 9rem;
+  width: 1.1rem;
+  height: 1.1rem;
+  -webkit-clip-path: polygon(50% 0%, 68% 20%, 77% 40%, 79% 67%, 67% 89%, 41% 100%, 20% 88%, 15% 67%, 16% 40%, 28% 19%);
+          clip-path: polygon(50% 0%, 68% 20%, 77% 40%, 79% 67%, 67% 89%, 41% 100%, 20% 88%, 15% 67%, 16% 40%, 28% 19%);
+  background: #7fc1f9;
+  -webkit-animation: drop 0.6s linear 1.44s infinite;
+          animation: drop 0.6s linear 1.44s infinite;
+  -webkit-animation-fill-mode: both;
+          animation-fill-mode: both;
+  transform-origin: 50% 100%;
+}
+
+.big-drop-4 {
+  position: absolute;
+  z-index: 15;
+  left: 15.2rem;
+  bottom: 9rem;
+  width: 1.1rem;
+  height: 1.1rem;
+  -webkit-clip-path: polygon(50% 0%, 68% 20%, 77% 40%, 79% 67%, 67% 89%, 41% 100%, 20% 88%, 15% 67%, 16% 40%, 28% 19%);
+          clip-path: polygon(50% 0%, 68% 20%, 77% 40%, 79% 67%, 67% 89%, 41% 100%, 20% 88%, 15% 67%, 16% 40%, 28% 19%);
+  background: #7fc1f9;
+  -webkit-animation: drop 0.6s linear 1.32s infinite;
+          animation: drop 0.6s linear 1.32s infinite;
+  -webkit-animation-fill-mode: both;
+          animation-fill-mode: both;
+  transform-origin: 50% 100%;
+}
+
+.big-drop-5 {
+  position: absolute;
+  z-index: 15;
+  left: 19rem;
+  bottom: 9rem;
+  width: 1.1rem;
+  height: 1.1rem;
+  -webkit-clip-path: polygon(50% 0%, 68% 20%, 77% 40%, 79% 67%, 67% 89%, 41% 100%, 20% 88%, 15% 67%, 16% 40%, 28% 19%);
+          clip-path: polygon(50% 0%, 68% 20%, 77% 40%, 79% 67%, 67% 89%, 41% 100%, 20% 88%, 15% 67%, 16% 40%, 28% 19%);
+  background: #7fc1f9;
+  -webkit-animation: drop 0.6s linear 0.4s infinite;
+          animation: drop 0.6s linear 0.4s infinite;
+  -webkit-animation-fill-mode: both;
+          animation-fill-mode: both;
+  transform-origin: 50% 100%;
+}
+
+.big-drop-6 {
+  position: absolute;
+  z-index: 15;
+  left: 22.8rem;
+  bottom: 9rem;
+  width: 1.1rem;
+  height: 1.1rem;
+  -webkit-clip-path: polygon(50% 0%, 68% 20%, 77% 40%, 79% 67%, 67% 89%, 41% 100%, 20% 88%, 15% 67%, 16% 40%, 28% 19%);
+          clip-path: polygon(50% 0%, 68% 20%, 77% 40%, 79% 67%, 67% 89%, 41% 100%, 20% 88%, 15% 67%, 16% 40%, 28% 19%);
+  background: #7fc1f9;
+  -webkit-animation: drop 0.6s linear 0.28s infinite;
+          animation: drop 0.6s linear 0.28s infinite;
+  -webkit-animation-fill-mode: both;
+          animation-fill-mode: both;
+  transform-origin: 50% 100%;
+}
+
+.big-drop-7 {
+  position: absolute;
+  z-index: 15;
+  left: 26.6rem;
+  bottom: 9rem;
+  width: 1.1rem;
+  height: 1.1rem;
+  -webkit-clip-path: polygon(50% 0%, 68% 20%, 77% 40%, 79% 67%, 67% 89%, 41% 100%, 20% 88%, 15% 67%, 16% 40%, 28% 19%);
+          clip-path: polygon(50% 0%, 68% 20%, 77% 40%, 79% 67%, 67% 89%, 41% 100%, 20% 88%, 15% 67%, 16% 40%, 28% 19%);
+  background: #7fc1f9;
+  -webkit-animation: drop 0.6s linear 1.48s infinite;
+          animation: drop 0.6s linear 1.48s infinite;
+  -webkit-animation-fill-mode: both;
+          animation-fill-mode: both;
+  transform-origin: 50% 100%;
+}
+
+.big-drop-8 {
+  position: absolute;
+  z-index: 15;
+  left: 30.4rem;
+  bottom: 9rem;
+  width: 1.1rem;
+  height: 1.1rem;
+  -webkit-clip-path: polygon(50% 0%, 68% 20%, 77% 40%, 79% 67%, 67% 89%, 41% 100%, 20% 88%, 15% 67%, 16% 40%, 28% 19%);
+          clip-path: polygon(50% 0%, 68% 20%, 77% 40%, 79% 67%, 67% 89%, 41% 100%, 20% 88%, 15% 67%, 16% 40%, 28% 19%);
+  background: #7fc1f9;
+  -webkit-animation: drop 0.6s linear 1.08s infinite;
+          animation: drop 0.6s linear 1.08s infinite;
+  -webkit-animation-fill-mode: both;
+          animation-fill-mode: both;
+  transform-origin: 50% 100%;
+}
+
+.big-drop-9 {
+  position: absolute;
+  z-index: 15;
+  left: 34.2rem;
+  bottom: 9rem;
+  width: 1.1rem;
+  height: 1.1rem;
+  -webkit-clip-path: polygon(50% 0%, 68% 20%, 77% 40%, 79% 67%, 67% 89%, 41% 100%, 20% 88%, 15% 67%, 16% 40%, 28% 19%);
+          clip-path: polygon(50% 0%, 68% 20%, 77% 40%, 79% 67%, 67% 89%, 41% 100%, 20% 88%, 15% 67%, 16% 40%, 28% 19%);
+  background: #7fc1f9;
+  -webkit-animation: drop 0.6s linear 0.08s infinite;
+          animation: drop 0.6s linear 0.08s infinite;
+  -webkit-animation-fill-mode: both;
+          animation-fill-mode: both;
+  transform-origin: 50% 100%;
+}
+
+.big-drop-10 {
+  position: absolute;
+  z-index: 15;
+  left: 38rem;
+  bottom: 9rem;
+  width: 1.1rem;
+  height: 1.1rem;
+  -webkit-clip-path: polygon(50% 0%, 68% 20%, 77% 40%, 79% 67%, 67% 89%, 41% 100%, 20% 88%, 15% 67%, 16% 40%, 28% 19%);
+          clip-path: polygon(50% 0%, 68% 20%, 77% 40%, 79% 67%, 67% 89%, 41% 100%, 20% 88%, 15% 67%, 16% 40%, 28% 19%);
+  background: #7fc1f9;
+  -webkit-animation: drop 0.7s linear 0.36s infinite;
+          animation: drop 0.7s linear 0.36s infinite;
+  -webkit-animation-fill-mode: both;
+          animation-fill-mode: both;
+  transform-origin: 50% 100%;
+}
+
+.small-drop-1 {
+  position: absolute;
+  z-index: 20;
+  left: 3.2rem;
+  bottom: 9rem;
+  width: 0.5rem;
+  height: 0.5rem;
+  -webkit-clip-path: polygon(50% 0%, 68% 20%, 77% 40%, 79% 67%, 67% 89%, 41% 100%, 20% 88%, 15% 67%, 16% 40%, 28% 19%);
+          clip-path: polygon(50% 0%, 68% 20%, 77% 40%, 79% 67%, 67% 89%, 41% 100%, 20% 88%, 15% 67%, 16% 40%, 28% 19%);
+  background: #7fc1f9;
+  -webkit-animation: drop 2.2s linear 0.84s infinite;
+          animation: drop 2.2s linear 0.84s infinite;
+  -webkit-animation-fill-mode: both;
+          animation-fill-mode: both;
+  transform-origin: 50% 100%;
+}
+
+.small-drop-2 {
+  position: absolute;
+  z-index: 20;
+  left: 6.4rem;
+  bottom: 9rem;
+  width: 0.5rem;
+  height: 0.5rem;
+  -webkit-clip-path: polygon(50% 0%, 68% 20%, 77% 40%, 79% 67%, 67% 89%, 41% 100%, 20% 88%, 15% 67%, 16% 40%, 28% 19%);
+          clip-path: polygon(50% 0%, 68% 20%, 77% 40%, 79% 67%, 67% 89%, 41% 100%, 20% 88%, 15% 67%, 16% 40%, 28% 19%);
+  background: #7fc1f9;
+  -webkit-animation: drop 2.1s linear 1s infinite;
+          animation: drop 2.1s linear 1s infinite;
+  -webkit-animation-fill-mode: both;
+          animation-fill-mode: both;
+  transform-origin: 50% 100%;
+}
+
+.small-drop-3 {
+  position: absolute;
+  z-index: 20;
+  left: 9.6rem;
+  bottom: 9rem;
+  width: 0.5rem;
+  height: 0.5rem;
+  -webkit-clip-path: polygon(50% 0%, 68% 20%, 77% 40%, 79% 67%, 67% 89%, 41% 100%, 20% 88%, 15% 67%, 16% 40%, 28% 19%);
+          clip-path: polygon(50% 0%, 68% 20%, 77% 40%, 79% 67%, 67% 89%, 41% 100%, 20% 88%, 15% 67%, 16% 40%, 28% 19%);
+  background: #7fc1f9;
+  -webkit-animation: drop 2.1s linear 1.56s infinite;
+          animation: drop 2.1s linear 1.56s infinite;
+  -webkit-animation-fill-mode: both;
+          animation-fill-mode: both;
+  transform-origin: 50% 100%;
+}
+
+.small-drop-4 {
+  position: absolute;
+  z-index: 20;
+  left: 12.8rem;
+  bottom: 9rem;
+  width: 0.5rem;
+  height: 0.5rem;
+  -webkit-clip-path: polygon(50% 0%, 68% 20%, 77% 40%, 79% 67%, 67% 89%, 41% 100%, 20% 88%, 15% 67%, 16% 40%, 28% 19%);
+          clip-path: polygon(50% 0%, 68% 20%, 77% 40%, 79% 67%, 67% 89%, 41% 100%, 20% 88%, 15% 67%, 16% 40%, 28% 19%);
+  background: #7fc1f9;
+  -webkit-animation: drop 2.2s linear 0.76s infinite;
+          animation: drop 2.2s linear 0.76s infinite;
+  -webkit-animation-fill-mode: both;
+          animation-fill-mode: both;
+  transform-origin: 50% 100%;
+}
+
+.small-drop-5 {
+  position: absolute;
+  z-index: 20;
+  left: 16rem;
+  bottom: 9rem;
+  width: 0.5rem;
+  height: 0.5rem;
+  -webkit-clip-path: polygon(50% 0%, 68% 20%, 77% 40%, 79% 67%, 67% 89%, 41% 100%, 20% 88%, 15% 67%, 16% 40%, 28% 19%);
+          clip-path: polygon(50% 0%, 68% 20%, 77% 40%, 79% 67%, 67% 89%, 41% 100%, 20% 88%, 15% 67%, 16% 40%, 28% 19%);
+  background: #7fc1f9;
+  -webkit-animation: drop 2.2s linear 0.84s infinite;
+          animation: drop 2.2s linear 0.84s infinite;
+  -webkit-animation-fill-mode: both;
+          animation-fill-mode: both;
+  transform-origin: 50% 100%;
+}
+
+.small-drop-6 {
+  position: absolute;
+  z-index: 20;
+  left: 19.2rem;
+  bottom: 9rem;
+  width: 0.5rem;
+  height: 0.5rem;
+  -webkit-clip-path: polygon(50% 0%, 68% 20%, 77% 40%, 79% 67%, 67% 89%, 41% 100%, 20% 88%, 15% 67%, 16% 40%, 28% 19%);
+          clip-path: polygon(50% 0%, 68% 20%, 77% 40%, 79% 67%, 67% 89%, 41% 100%, 20% 88%, 15% 67%, 16% 40%, 28% 19%);
+  background: #7fc1f9;
+  -webkit-animation: drop 2.2s linear 1.68s infinite;
+          animation: drop 2.2s linear 1.68s infinite;
+  -webkit-animation-fill-mode: both;
+          animation-fill-mode: both;
+  transform-origin: 50% 100%;
+}
+
+.small-drop-7 {
+  position: absolute;
+  z-index: 20;
+  left: 22.4rem;
+  bottom: 9rem;
+  width: 0.5rem;
+  height: 0.5rem;
+  -webkit-clip-path: polygon(50% 0%, 68% 20%, 77% 40%, 79% 67%, 67% 89%, 41% 100%, 20% 88%, 15% 67%, 16% 40%, 28% 19%);
+          clip-path: polygon(50% 0%, 68% 20%, 77% 40%, 79% 67%, 67% 89%, 41% 100%, 20% 88%, 15% 67%, 16% 40%, 28% 19%);
+  background: #7fc1f9;
+  -webkit-animation: drop 2.1s linear 1.4s infinite;
+          animation: drop 2.1s linear 1.4s infinite;
+  -webkit-animation-fill-mode: both;
+          animation-fill-mode: both;
+  transform-origin: 50% 100%;
+}
+
+.small-drop-8 {
+  position: absolute;
+  z-index: 20;
+  left: 25.6rem;
+  bottom: 9rem;
+  width: 0.5rem;
+  height: 0.5rem;
+  -webkit-clip-path: polygon(50% 0%, 68% 20%, 77% 40%, 79% 67%, 67% 89%, 41% 100%, 20% 88%, 15% 67%, 16% 40%, 28% 19%);
+          clip-path: polygon(50% 0%, 68% 20%, 77% 40%, 79% 67%, 67% 89%, 41% 100%, 20% 88%, 15% 67%, 16% 40%, 28% 19%);
+  background: #7fc1f9;
+  -webkit-animation: drop 2.1s linear 1.24s infinite;
+          animation: drop 2.1s linear 1.24s infinite;
+  -webkit-animation-fill-mode: both;
+          animation-fill-mode: both;
+  transform-origin: 50% 100%;
+}
+
+.small-drop-9 {
+  position: absolute;
+  z-index: 20;
+  left: 28.8rem;
+  bottom: 9rem;
+  width: 0.5rem;
+  height: 0.5rem;
+  -webkit-clip-path: polygon(50% 0%, 68% 20%, 77% 40%, 79% 67%, 67% 89%, 41% 100%, 20% 88%, 15% 67%, 16% 40%, 28% 19%);
+          clip-path: polygon(50% 0%, 68% 20%, 77% 40%, 79% 67%, 67% 89%, 41% 100%, 20% 88%, 15% 67%, 16% 40%, 28% 19%);
+  background: #7fc1f9;
+  -webkit-animation: drop 2.2s linear 1.16s infinite;
+          animation: drop 2.2s linear 1.16s infinite;
+  -webkit-animation-fill-mode: both;
+          animation-fill-mode: both;
+  transform-origin: 50% 100%;
+}
+
+.medium-drop-1 {
+  position: absolute;
+  z-index: 20;
+  left: 4rem;
+  bottom: 9rem;
+  width: 0.7rem;
+  height: 0.7rem;
+  -webkit-clip-path: polygon(50% 0%, 68% 20%, 77% 40%, 79% 67%, 67% 89%, 41% 100%, 20% 88%, 15% 67%, 16% 40%, 28% 19%);
+          clip-path: polygon(50% 0%, 68% 20%, 77% 40%, 79% 67%, 67% 89%, 41% 100%, 20% 88%, 15% 67%, 16% 40%, 28% 19%);
+  background: #7fc1f9;
+  -webkit-animation: drop 1.5s linear 0.08s infinite;
+          animation: drop 1.5s linear 0.08s infinite;
+  -webkit-animation-fill-mode: both;
+          animation-fill-mode: both;
+  transform-origin: 50% 100%;
+}
+
+.medium-drop-2 {
+  position: absolute;
+  z-index: 20;
+  left: 8rem;
+  bottom: 9rem;
+  width: 0.7rem;
+  height: 0.7rem;
+  -webkit-clip-path: polygon(50% 0%, 68% 20%, 77% 40%, 79% 67%, 67% 89%, 41% 100%, 20% 88%, 15% 67%, 16% 40%, 28% 19%);
+          clip-path: polygon(50% 0%, 68% 20%, 77% 40%, 79% 67%, 67% 89%, 41% 100%, 20% 88%, 15% 67%, 16% 40%, 28% 19%);
+  background: #7fc1f9;
+  -webkit-animation: drop 1.5s linear 0.04s infinite;
+          animation: drop 1.5s linear 0.04s infinite;
+  -webkit-animation-fill-mode: both;
+          animation-fill-mode: both;
+  transform-origin: 50% 100%;
+}
+
+.medium-drop-3 {
+  position: absolute;
+  z-index: 20;
+  left: 12rem;
+  bottom: 9rem;
+  width: 0.7rem;
+  height: 0.7rem;
+  -webkit-clip-path: polygon(50% 0%, 68% 20%, 77% 40%, 79% 67%, 67% 89%, 41% 100%, 20% 88%, 15% 67%, 16% 40%, 28% 19%);
+          clip-path: polygon(50% 0%, 68% 20%, 77% 40%, 79% 67%, 67% 89%, 41% 100%, 20% 88%, 15% 67%, 16% 40%, 28% 19%);
+  background: #7fc1f9;
+  -webkit-animation: drop 1.5s linear 1.12s infinite;
+          animation: drop 1.5s linear 1.12s infinite;
+  -webkit-animation-fill-mode: both;
+          animation-fill-mode: both;
+  transform-origin: 50% 100%;
+}
+
+.medium-drop-4 {
+  position: absolute;
+  z-index: 20;
+  left: 16rem;
+  bottom: 9rem;
+  width: 0.7rem;
+  height: 0.7rem;
+  -webkit-clip-path: polygon(50% 0%, 68% 20%, 77% 40%, 79% 67%, 67% 89%, 41% 100%, 20% 88%, 15% 67%, 16% 40%, 28% 19%);
+          clip-path: polygon(50% 0%, 68% 20%, 77% 40%, 79% 67%, 67% 89%, 41% 100%, 20% 88%, 15% 67%, 16% 40%, 28% 19%);
+  background: #7fc1f9;
+  -webkit-animation: drop 1.5s linear 0.84s infinite;
+          animation: drop 1.5s linear 0.84s infinite;
+  -webkit-animation-fill-mode: both;
+          animation-fill-mode: both;
+  transform-origin: 50% 100%;
+}
+
+.medium-drop-5 {
+  position: absolute;
+  z-index: 20;
+  left: 20rem;
+  bottom: 9rem;
+  width: 0.7rem;
+  height: 0.7rem;
+  -webkit-clip-path: polygon(50% 0%, 68% 20%, 77% 40%, 79% 67%, 67% 89%, 41% 100%, 20% 88%, 15% 67%, 16% 40%, 28% 19%);
+          clip-path: polygon(50% 0%, 68% 20%, 77% 40%, 79% 67%, 67% 89%, 41% 100%, 20% 88%, 15% 67%, 16% 40%, 28% 19%);
+  background: #7fc1f9;
+  -webkit-animation: drop 1.6s linear 1.48s infinite;
+          animation: drop 1.6s linear 1.48s infinite;
+  -webkit-animation-fill-mode: both;
+          animation-fill-mode: both;
+  transform-origin: 50% 100%;
+}
+
+.medium-drop-6 {
+  position: absolute;
+  z-index: 20;
+  left: 24rem;
+  bottom: 9rem;
+  width: 0.7rem;
+  height: 0.7rem;
+  -webkit-clip-path: polygon(50% 0%, 68% 20%, 77% 40%, 79% 67%, 67% 89%, 41% 100%, 20% 88%, 15% 67%, 16% 40%, 28% 19%);
+          clip-path: polygon(50% 0%, 68% 20%, 77% 40%, 79% 67%, 67% 89%, 41% 100%, 20% 88%, 15% 67%, 16% 40%, 28% 19%);
+  background: #7fc1f9;
+  -webkit-animation: drop 1.5s linear 1.8s infinite;
+          animation: drop 1.5s linear 1.8s infinite;
+  -webkit-animation-fill-mode: both;
+          animation-fill-mode: both;
+  transform-origin: 50% 100%;
+}
+
+.medium-drop-7 {
+  position: absolute;
+  z-index: 20;
+  left: 28rem;
+  bottom: 9rem;
+  width: 0.7rem;
+  height: 0.7rem;
+  -webkit-clip-path: polygon(50% 0%, 68% 20%, 77% 40%, 79% 67%, 67% 89%, 41% 100%, 20% 88%, 15% 67%, 16% 40%, 28% 19%);
+          clip-path: polygon(50% 0%, 68% 20%, 77% 40%, 79% 67%, 67% 89%, 41% 100%, 20% 88%, 15% 67%, 16% 40%, 28% 19%);
+  background: #7fc1f9;
+  -webkit-animation: drop 1.5s linear 1.08s infinite;
+          animation: drop 1.5s linear 1.08s infinite;
+  -webkit-animation-fill-mode: both;
+          animation-fill-mode: both;
+  transform-origin: 50% 100%;
+}
+
+.medium-drop-8 {
+  position: absolute;
+  z-index: 20;
+  left: 32rem;
+  bottom: 9rem;
+  width: 0.7rem;
+  height: 0.7rem;
+  -webkit-clip-path: polygon(50% 0%, 68% 20%, 77% 40%, 79% 67%, 67% 89%, 41% 100%, 20% 88%, 15% 67%, 16% 40%, 28% 19%);
+          clip-path: polygon(50% 0%, 68% 20%, 77% 40%, 79% 67%, 67% 89%, 41% 100%, 20% 88%, 15% 67%, 16% 40%, 28% 19%);
+  background: #7fc1f9;
+  -webkit-animation: drop 1.6s linear 1.68s infinite;
+          animation: drop 1.6s linear 1.68s infinite;
+  -webkit-animation-fill-mode: both;
+          animation-fill-mode: both;
+  transform-origin: 50% 100%;
+}
+
+.medium-drop-9 {
+  position: absolute;
+  z-index: 20;
+  left: 36rem;
+  bottom: 9rem;
+  width: 0.7rem;
+  height: 0.7rem;
+  -webkit-clip-path: polygon(50% 0%, 68% 20%, 77% 40%, 79% 67%, 67% 89%, 41% 100%, 20% 88%, 15% 67%, 16% 40%, 28% 19%);
+          clip-path: polygon(50% 0%, 68% 20%, 77% 40%, 79% 67%, 67% 89%, 41% 100%, 20% 88%, 15% 67%, 16% 40%, 28% 19%);
+  background: #7fc1f9;
+  -webkit-animation: drop 1.5s linear 1.88s infinite;
+          animation: drop 1.5s linear 1.88s infinite;
+  -webkit-animation-fill-mode: both;
+          animation-fill-mode: both;
+  transform-origin: 50% 100%;
+}
+
+@-webkit-keyframes drop {
+  0% {
+    transform: translate3d(4rem, -32rem, 0) scaleX(1) scaleY(1) rotate(17deg);
+  }
+  85% {
+    transform: translate3d(0, 0, 0) scaleX(1) scaleY(1) rotate(17deg);
+  }
+  100% {
+    transform: translate3d(0, 0, 0) scaleX(3) scaleY(0) rotate(0deg);
+  }
+}
+
+@keyframes drop {
+  0% {
+    transform: translate3d(4rem, -32rem, 0) scaleX(1) scaleY(1) rotate(17deg);
+  }
+  85% {
+    transform: translate3d(0, 0, 0) scaleX(1) scaleY(1) rotate(17deg);
+  }
+  100% {
+    transform: translate3d(0, 0, 0) scaleX(3) scaleY(0) rotate(0deg);
+  }
+}
+@-webkit-keyframes rise {
+  from {
+    transform: translate(-2rem, 20rem);
+  }
+  to {
+    transform: translate(0, 0);
+  }
+}
+@keyframes rise {
+  from {
+    transform: translate(-2rem, 20rem);
+  }
+  to {
+    transform: translate(0, 0);
+  }
+}/*# sourceMappingURL=style.css.map */

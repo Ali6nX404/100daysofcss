@@ -1,0 +1,318 @@
+//font
+
+@import url(https://fonts.googleapis.com/css?family=Open+Sans:300,400);
+
+//colors
+
+$rain-drop-color: #7fc1f9;
+$moon-color: #f6edbd;
+$moon-circles: #e0d6a0;
+$hill-bg-1: #26314f;
+$hill-bg-2: #303c5d;
+$frame-bg: #1a2238;
+
+*,
+*::after,
+*::before {
+  margin: 0;
+}
+
+html {
+  font-size: 62.5%;
+}
+
+.frame {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  width: 40rem;
+  height: 40rem;
+  transform: translate(-50%, -50%);
+  border-radius: 2px;
+  box-shadow: 0.1rem 0.2rem 1rem rgba(0, 0, 0, 0.3);
+  background: $frame-bg;
+  overflow: hidden;
+  font-family: "Open Sans", Helvetica, sans-serif;
+}
+
+// Moon Creation
+
+.moon {
+  position: absolute;
+  width: 6.7rem;
+  height: 6.7rem;
+  top: 4.5rem;
+  left: 4.5rem;
+  border-radius: 50%;
+  background: $moon-color;
+  overflow: hidden;
+  box-shadow: 0 0 1rem $moon-color;
+  animation: rise 1s ease-out;
+
+  .dark-circle-1 {
+    position: absolute;
+    width: 1rem;
+    height: 1rem;
+    top: 0.9rem;
+    left: 2.8rem;
+    border-radius: 50%;
+    background: $moon-circles;
+  }
+
+  .dark-circle-2 {
+    @extend .dark-circle-1;
+    top: 1.5rem;
+    left: 0rem;
+  }
+
+  .dark-circle-3 {
+    @extend .dark-circle-1;
+    top: 5.7rem;
+    left: 1.6rem;
+  }
+
+  .dark-circle-4 {
+    @extend .dark-circle-1;
+    width: 0.7rem;
+    height: 0.7rem;
+    top: 1.7rem;
+    left: 4.5rem;
+  }
+
+  .dark-circle-5 {
+    @extend .dark-circle-4;
+    top: 2.6rem;
+    left: 6rem;
+  }
+
+  .dark-circle-6 {
+    @extend .dark-circle-4;
+    top: 3.7rem;
+    left: 1.7rem;
+  }
+
+  .dark-circle-7 {
+    @extend .dark-circle-4;
+    top: 3.7rem;
+  }
+
+  .dark-circle-8 {
+    @extend .dark-circle-4;
+    top: 5rem;
+    left: 3.5rem;
+  }
+
+  .dark-circle-9 {
+    @extend .dark-circle-1;
+    width: 0.4rem;
+    height: 0.4rem;
+    top: 2.5rem;
+    left: 1.6rem;
+  }
+
+  .dark-circle-10 {
+    @extend .dark-circle-9;
+    top: 3rem;
+    left: 3.4rem;
+  }
+}
+
+// Hill Creation
+
+.hill-1 {
+  position: absolute;
+  z-index: 2;
+  width: 33rem;
+  height: 28rem;
+  top: 20rem;
+  left: -5.7rem;
+  background: $hill-bg-1;
+  border-radius: 50%;
+}
+
+.hill-2 {
+  @extend .hill-1;
+  left: 150px;
+}
+
+.hill-sec-1 {
+  @extend .hill-1;
+  background: $hill-bg-2;
+  top: 25rem;
+  left: -15rem;
+}
+
+.hill-sec-2 {
+  @extend .hill-sec-1;
+  left: 5rem;
+  top: 24rem;
+}
+
+.hill-sec-3 {
+  @extend .hill-sec-1;
+  left: 24rem;
+}
+
+// Bottom Temp info
+
+.temp-info {
+  background-color: #fff;
+  z-index: 2;
+  position: absolute;
+  bottom: 0;
+  width: 100%;
+  height: 9rem;
+
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+
+  .temp {
+    font-size: 5rem;
+    font-weight: 200;
+    letter-spacing: 0.4rem;
+    margin-left: -0.5rem;
+  }
+
+  p {
+    margin-left: -5rem;
+    font-size: 1.5rem;
+    color: #000000b3;
+  }
+}
+
+td {
+  font-size: 1.3rem;
+  font-weight: 200;
+
+  color: #000000b3;
+}
+
+/// Rain Drop Big
+
+@for $i from 1 through 10 {
+  .big-drop-#{$i} {
+    position: absolute;
+    z-index: 15;
+    left: (3.8 * $i) + rem;
+    bottom: 9rem;
+    width: 1.1rem;
+    height: 1.1rem;
+
+    clip-path: polygon(
+      50% 0%,
+      68% 20%,
+      77% 40%,
+      79% 67%,
+      67% 89%,
+      41% 100%,
+      20% 88%,
+      15% 67%,
+      16% 40%,
+      28% 19%
+    );
+    background: $rain-drop-color;
+    animation: drop
+      (0.5 + random(2) / 10) +
+      s
+      linear
+      (random(50) / 25) +
+      s
+      infinite;
+    animation-fill-mode: both;
+    transform-origin: 50% 100%;
+  }
+}
+
+// rain Drop small
+
+@for $i from 1 to 10 {
+  .small-drop-#{$i} {
+    position: absolute;
+    z-index: 20;
+    left: (3.2 * $i) + rem;
+    bottom: 9rem;
+    width: 0.5rem;
+    height: 0.5rem;
+    clip-path: polygon(
+      50% 0%,
+      68% 20%,
+      77% 40%,
+      79% 67%,
+      67% 89%,
+      41% 100%,
+      20% 88%,
+      15% 67%,
+      16% 40%,
+      28% 19%
+    );
+    background: $rain-drop-color;
+    animation: drop
+      (2 + random(2) / 10) +
+      s
+      linear
+      (random(50) / 25) +
+      s
+      infinite;
+    animation-fill-mode: both;
+    transform-origin: 50% 100%;
+  }
+}
+
+// rain drop medium
+
+@for $i from 1 to 10 {
+  .medium-drop-#{$i} {
+    position: absolute;
+    z-index: 20;
+    left: (4 * $i) + rem;
+    bottom: 9rem;
+    width: 0.7rem;
+    height: 0.7rem;
+    clip-path: polygon(
+      50% 0%,
+      68% 20%,
+      77% 40%,
+      79% 67%,
+      67% 89%,
+      41% 100%,
+      20% 88%,
+      15% 67%,
+      16% 40%,
+      28% 19%
+    );
+    background: $rain-drop-color;
+    animation: drop
+      (1.4 + random(2) / 10) +
+      s
+      linear
+      (random(50) / 25) +
+      s
+      infinite;
+    animation-fill-mode: both;
+    transform-origin: 50% 100%;
+  }
+}
+
+/// Animation Keyframes
+
+@keyframes drop {
+  0% {
+    transform: translate3d(4rem, -32rem, 0) scaleX(1) scaleY(1) rotate(17deg);
+  }
+  85% {
+    transform: translate3d(0, 0, 0) scaleX(1) scaleY(1) rotate(17deg);
+  }
+  100% {
+    transform: translate3d(0, 0, 0) scaleX(3) scaleY(0) rotate(0deg);
+  }
+}
+
+@keyframes rise {
+  from {
+    transform: translate(-2rem, 20rem);
+  }
+  to {
+    transform: translate(0, 0);
+  }
+}
